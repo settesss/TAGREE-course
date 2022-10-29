@@ -3,43 +3,51 @@
     <head>
         <meta charset = "UTF-8"/>
         <title>LENNI ART</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
         <link rel = "stylesheet" href = "styles/styles.css">
     </head>
     <body class = "body">
         <header class = "header">
-            <div class = "header__logo">
-                <div class = "header__rectangle1"></div>
-                <div class = "header__rectangle2"></div>
-                <div class = "header__LENNI header__z">
-                    <img src = "images/LENNI.png">
+            <div class = "header__container">
+                <a href = "index.html" class = "header__logo">
+                    <svg viewBox="0 0 202 147" fill="none" xmlns="http://www.w3.org/2000/svg" class = "logo__icon">
+                        <rect width="147" height="147" fill="#1F1E1E"/>
+                        <path d="M39.9655 72.439H26.6335V50.032H26.6005V49.999H21.9145V73H39.9655V72.439Z" fill="white"/>
+                        <path d="M43.9316 73H62.0486V72.439H48.6176V61.285H59.1116V60.691H48.6176V50.56H62.0486V49.999H43.9316V73Z" fill="white"/>
+                        <path d="M70.6993 73V50.56C73.5703 50.56 82.4143 51.649 83.0743 64.453V73H87.7603V49.999H83.0743V60.328C81.6553 54.19 77.1673 49.999 70.6993 49.999H66.0133V73H70.6993Z" fill="white"/>
+                        <path d="M97.3893 73V50.56C100.26 50.56 109.104 51.649 109.764 64.453V73H114.45V49.999H109.764V60.328C108.345 54.19 103.857 49.999 97.3893 49.999H92.7033V73H97.3893Z" fill="white"/>
+                        <path d="M119.393 73H124.079V49.999H119.393V73Z" fill="white"/>
+                        <rect x="81" y="92" width="121" height="42" fill="#BC3324"/>
+                        <path d="M108.922 124H109.462L112.402 115.45H120.952L124.282 124H128.752L120.652 103.09H116.122L108.922 124ZM116.422 103.75L120.772 114.94H112.582L116.422 103.75Z" fill="white"/>
+                        <path d="M132.644 103.09V124H136.904V116.77H141.974L146.864 123.97H151.724L146.564 116.32C149.564 115.54 151.844 113.68 151.844 109.51C151.844 104.29 148.034 102.64 143.594 102.64C138.914 102.64 137.564 106.15 136.904 110.05V103.09H132.644ZM138.074 107.47C138.884 104.53 140.984 103.33 142.844 103.18C147.314 102.76 147.494 105.61 147.494 109.51C147.494 115.84 144.134 116.26 141.254 116.26H136.904C136.904 116.26 136.784 112.12 138.074 107.47Z" fill="white"/>
+                        <path d="M162.084 103.6L162.114 124H166.374V103.6H174.984V103.09H153.474V103.6H162.084Z" fill="white"/>
+                        </svg>
+                </a>
+                <nav class = "header__navigation">
+                    <a href = "" class = "header__events nav__link">Мероприятия</a>
+                    <a href = "" class = "header__blog nav__link">Блог</a>
+                    <a href = "" class = "header__about nav__link">О нас</a>
+                    <a href = "" class = "header__contacts nav__link">Контакты</a>
+                </nav>
+                <div class = "header__right-block">
+                    <a href = "#" class = "header__button button">Войти</a>
                 </div>
-                <div class = "header__ART header__z">
-                    <img src = "images/ART.png">
-                </div>
+                <!--<div class = "header__rectangle"></div>-->
             </div>
-            <nav class = "navigation">
-                <a href = "" class = "header__events nav__text">Мероприятия</a>
-                <a href = "" class = "header__blog nav__text">Блог</a>
-                <a href = "" class = "header__about nav__text">О нас</a>
-                <a href = "" class = "header__contacts nav__text">Контакты</a>
-            </nav>
-            <div class = "header__login">
-                <input type = "button" value = "Войти" class = "header__button">
-            </div>
-            <div class = "header__rectangle"></div>
         </header>
         <main class = "main">
             <div class = "main__LENNI">
-                <img src = "images/LENNI_main.png">
             </div>
             <div class = "main__quote">
-                <h1 class = "quote__upper quote__text">Арт - пространство
+                <!--<h1 class = "quote__upper quote__text">Арт - пространство
                     <h1 class = "quote__lower quote__text">Для людей, горящих сердец и делом
                     <br>место для настоящего
-                </h1>
+                </h1>-->
             </div>
             <div class = "main__buttons">
-                <h3 class = "main__want">Я хочу:</h3>
+                <!--<h3 class = "main__want">Я хочу:</h3>-->
                 <div class = "buttons__event"></div>
                 <div class = "buttons__tenant"></div>
             </div>
@@ -47,32 +55,32 @@
                 <div class = "main__rectangle"></div>
             </div>
             <section class = "main__textblock1">
-                <h2 class = "textblock1__name">Проект "Millenials"</h2>
+                <!--<h2 class = "textblock1__name">Проект "Millenials"</h2>
                 <p class = "textblock1__description1">Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и желанием
                     <br>сделать мир лучше, проявить себя. У них есть талант и стремление, у нас возможность помочь
                     <br>им воплотить их мечту в реальность.
-                </p>
+                </p>-->
             </section>
             <div class = "main__pic1"></div>
             <div class = "main__pic2"></div>
             <section class = "main__textblock2">
-                <h2 class = "textblock2__name">Мы предоставляем площади для
+                <!--<h2 class = "textblock2__name">Мы предоставляем площади для
                     <br>вашего мероприятия
                 </h2>
                 <p class = "textblock2__description1">И оказываем помощь с организацией, если вам нужно.
                     <br>Наша цель: вовлеь в культурную жизнь города как можно больше людей, помочь молодыми
                     <br>ребятам сделать первые шаги к своей мечте и рассказать о том, что их волнует.
-                </p>
+                </p>-->
             </section>
             <div class = "main__pic3">
                 <div class = "main__rectangle1"></div>
             </div>
-            <p class = "main__text">Мы уже успешно организовали и
+            <!--<p class = "main__text">Мы уже успешно организовали и
                 <br>провели более 100 проектов.
                 <br>Посмотрите, как это было классно.
-            </p>
+            </p>-->
             <div class = "main__button1">
-                <p class = "main__watch">Смотреть</p>
+                <!--<p class = "main__watch">Смотреть</p>
                 <div class = "main__buttonright">
                     <div class = "button__arrow">
                         <img src = "images/arrow_right.png">
@@ -80,16 +88,16 @@
                     <div class = "button_ellipseright">
                         <img src = "images/ellipse_right.png">
                     </div>
-                </div>
+                </div>-->
             </div>
-            <div class = "main__events">
+            <!-- <div class = "main__events">
                 <div class = "main__rectangle"></div>
-            </div>
+            </div> -->
             <div class = "main__card1">
                 <div class = "main__pic4">
                     <img src = "">
                 </div>
-                <section class = "card__text">
+                <!--<div class = "card__text">
                     <h2 class = "cards__name card1__name">
                         Собираемся и слушаем альбом
                         <br>Nirvana. Nirvana
@@ -101,13 +109,13 @@
                     <p class = "cards__date">
                         07.12.2022 | начало 18.00
                     </p>
-                </section>
+                </div>-->
             </div>
             <div class = "main__card2">
                 <div class = "main__pic5">
                     <img src = "">
                 </div>
-                <section class = "card__text">
+                <!--<div class = "card__text">
                     <h2 class = "cards__name card2__name">
                         Есть тема, нужно обсудить с
                         <br>HowStuffWorks
@@ -120,13 +128,13 @@
                     <p class = "cards__date">
                         14.12.2002 | начало 18.30
                     </p>
-                </section>
+                </div>-->
             </div>
             <div class = "main__card3">
                 <div class = "main__pic6">
                     <img src = "">
                 </div>
-                <div class = "card__text">
+                <!--<div class = "card__text">
                     <h2 class = "cards__name card3__name">
                         Вечер | The Best of Sade
                     </h2>
@@ -137,7 +145,7 @@
                     <p class = "cards__date">
                         16.12.2022 | начало 20.00
                     </p>
-                </div>
+                </div>-->
             </div>
             <div class = "main__slider">
                 <div class = "slider__rects">
@@ -147,18 +155,18 @@
                     <div class = "slider__rect4"></div>
                     <div class = "slider__rect5"></div>
                 </div>
-                <div class = "main__buttonleft">
+                <!--<div class = "main__buttonleft">
                     <img src = "images/ellipse_left.png">
                     <img src = "images/arrow_right.png" class = "buttonleft__arrow">
                 </div>
                 <div class = "main__buttonright">
                     <img src = "images/arrow_right.png">
                     <img src = "images/ellipse_right.png">
-                </div>
+                </div>-->
             </div>
-            <div class = "main__button2">
+            <!--<div class = "main__button2">
                 <p class = "main__watch">Смотреть все</p>
-            </div>
+            </div>-->
             <div class = "main__backrectangle"></div>
             <div class = "main__blog">
                 <div class = "main__rectangle"></div>
@@ -175,14 +183,14 @@
                             <div class = "text_description"></div>
                         </div>
                     </div>
-                    <div class = "main__buttonright">
+                    <!--<div class = "main__buttonright">
                         <div class = "button__arrow">
                             <img src = "images/arrow_right.png">
                         </div>
                         <div class = "button_ellipseright">
                             <img src = "images/ellipse_right.png">
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <div class = "main__news2">
@@ -197,14 +205,14 @@
                             <div class = "text_description"></div>
                         </div>
                     </div>
-                    <div class = "main__buttonright">
+                    <!--<div class = "main__buttonright">
                         <div class = "button__arrow">
                             <img src = "images/arrow_right.png">
                         </div>
                         <div class = "button_ellipseright">
                             <img src = "images/ellipse_right.png">
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <div class = "main__news3">
@@ -219,14 +227,14 @@
                             <div class = "text_description"></div>
                         </div>
                     </div>
-                    <div class = "main__buttonright">
+                    <!--<div class = "main__buttonright">
                         <div class = "button__arrow">
                             <img src = "images/arrow_right.png">
                         </div>
                         <div class = "button_ellipseright">
                             <img src = "images/ellipse_right.png">
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <div class = "main__contacts">
@@ -272,56 +280,6 @@
             </div>
         </main>
         <footer class = "footer">
-            <div class = "footer__tagree">
-                <img src = "">
-                <p class = "footer__text"></p>
-            </div>
-            <div class = "footer__indicator">
-                <img src = "">
-            </div>
-            <div class = "footer__subscribe">
-                <p class = "footer__text"></p>
-                <div class = "footer__slider">
-                    <div class = "subscribe__area">
-                        <div class = "footer__button">
-                            <p class = "footer__text text__subscribe"></p>
-                        </div>
-                        <p class = "footer__text text__mail"></p>
-                        <div class = "footer__rectangle"></div>
-                    </div>
-                    <label class = "footer__text footer__checkbox">
-                        <input type = "checkbox">
-                        Согласен на обработку персональных данных
-                    </label>
-                </div>
-            </div>
-            <div class = "footer__linksblock">
-                <div class = "footer__rectangle2"></div>
-                <div class = "footer__links">
-                    <p class = "link__calendar"></p>
-                    <p class = "link__eventstart"></p>
-                    <p class = "link__becometenant"></p>
-                    <p class = "link__projects"></p>
-                    <p class = "link__contacts"></p>
-                </div>
-            </div>
-            <div class = "footer__cookieblock">
-                <p class = "footer__privacy"></p>
-                <p class = "footer__cookie"></p>
-            </div>
-            <p class = "footer__copyright"></p>
-            <div class = "footer__networks">
-                <div class = "VK__block">
-                    <img src = "">
-                    <div class = "footer__ellipse VK__ellipse"></div>
-                </div>
-                <div class = "Insta__block">
-                    <img src = "">
-                    <div class = "footer__ellipse Insta__ellipse"></div>
-                </div>
-            </div>
         </footer>
-        <img class = "noise" src = "">
-        <img class = "background" src = "">
     </body>
 </html>
