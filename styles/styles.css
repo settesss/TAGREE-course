@@ -24,6 +24,9 @@ body {
     left: 0;
     width: 100%;
     height: 147px;
+    background: rgba(222, 222, 222, 0.5);
+    backdrop-filter: blur(20px);
+    z-index: 10;
 }
 
 .header__logo {
@@ -112,36 +115,84 @@ body {
     width: 202px;
 }
 
+/*Листинг карточек*/
+.section-title {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 624px;
+    min-height: 62px;
+    margin: 0 auto 150px;
+    padding: 8px 45px;
+    background-color: #1F1E1E;
+    color:#FFFFFF;
+    font-family: 'Lora';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.277;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.listing {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .listing__events-cards {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -30px;
+    margin: 0 -30px -120px;
+}
+
+.events { 
+    padding: 140px 0 100px;
+}
+
+.listing__events {
+    margin-bottom: 10px;
 }
 
 .events-card {
     display: flex;
-    width: 100%;
-    margin: 0 30px 120px;
-    max-width: 405px;
-    min-width: 280px;
     width: calc(33.333% - 60px);
+    margin: 0 30px 120px;
+    max-width: 100%;
+    min-width: 280px;
 }
 
 .events-card__link {
     display: flex;
     flex-direction: column;
     width: 100%;
+    color:#1F1E1E;
     text-decoration: none;
+}
+
+.events-card__link:hover .events-card__title {
+    color: #BC3324;
+    text-decoration-color: #BC3324;
 }
 
 .events-card__picture {
     display: block;
     margin-bottom: 25px;
     position: relative;
-    
+    width: 100%;
+    font-size: 0;
+    text-decoration: none;
+    overflow: hidden;
 }
 
-.events-card__picture::before {
+.events-card__picture::after {
     content: '';
     display: block;
     padding-top: 107.16%; /*height : width*/
@@ -149,6 +200,7 @@ body {
 }
 
 .events-card__image {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -157,25 +209,115 @@ body {
     object-fit: cover;
 }
 
-.events {
-    box-sizing: border-box;
-    max-width: 1414px;
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 0 auto;
+.events-card__title {
+    margin-bottom: 15px;
+    min-height: 66px;
+    color: #1F1E1E;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration: underline transparent;
+    transition: color 0.2s, text-decoration-color 0.2s;
 }
 
-.section-title {
-    box-sizing: border-box;
-    margin: auto;
-    background-color: #1F1E1E;
-    padding-top: 7px;
-    padding-bottom: 9px;
-    min-width: 280px;
-    width: 624px;
+.events-card__text {
+    margin: 0 0 auto;
+    color:#1F1E1E;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.events-card__time {
+    margin: 15px 0 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+/*Кнопка <показать еще>*/
+.view-button {
     display: flex;
-    color: #FFFFFF;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.button__arrow {
+    width: 60px;
+    height: 91px;
+    margin-top: 23px;
+}
+
+.view-button__text {
+    font: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*Блок дополнительных услуг*/
+.service {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1414px;
+    margin: 100px auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.service__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    align-items: flex-start;
+    min-width: 280px;
+    max-width: 65%;
+}
+
+/*Таблица*/
+.table {
+    display: table;
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    border-collapse: collapse;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.table-check {
+    width: 1.3em;
+    vertical-align: middle;
+}
+
+tr .table-service{
+    text-align: start;
+    max-width: 100%;
+    min-width: 188px;
+}
+
+.table-body tr:nth-child(odd) {
+    background-color:#ededed;
+}
+
+td {
+    height: 50px;
+    max-height: 100px;
+}
+
+td:not(:last-child) {
+    border-right: 1px solid #c7c7c7;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid #c7c7c7;
+}
+
+th {
+    padding: 30px 50px;
+}
+
+th:not(:first-child) {
+    border-left: 1px solid #c7c7c7;
 }
