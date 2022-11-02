@@ -115,7 +115,7 @@ body {
     width: 202px;
 }
 
-/*Листинг карточек*/
+/* Листинг карточек */
 .section-title {
     box-sizing: border-box;
     display: flex;
@@ -234,7 +234,7 @@ body {
     line-height: 19px;
 }
 
-/*Кнопка <показать еще>*/
+/* Кнопка <показать еще> */
 .view-button {
     display: flex;
     flex-direction: column;
@@ -254,7 +254,7 @@ body {
     font-size: 16px;
 }
 
-/*Блок дополнительных услуг*/
+/* Блок дополнительных услуг */
 .service {
     box-sizing: border-box;
     display: flex;
@@ -275,7 +275,7 @@ body {
     max-width: 65%;
 }
 
-/*Таблица*/
+/* Таблица */
 .table {
     display: table;
     text-align: center;
@@ -320,4 +320,113 @@ th {
 
 th:not(:first-child) {
     border-left: 1px solid #c7c7c7;
+}
+
+/* Блок кнопок */
+
+.block-buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    width: 50%;
+    max-width: 648px;
+    min-height: 132px;
+    text-align: center;
+}
+
+.block-buttons__title {
+    font-family: 'Lora';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.btn {
+    display: flex;
+    width: 272px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #1F1E1E;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 5px;
+}
+
+.btn__block-red {
+    border-color:#BC3324;
+    background-color: #BC3324;
+    color: #FFFFFF;
+    transition: background-color 0.2s, color 0.2s,  border-color 0.2s;
+}
+
+.btn__block-noncolor {
+    color: black;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn__block-red:hover {
+    border-color: #1F1E1E;
+    background-color:#1F1E1E;
+    color:#FFFFFF;
+}
+
+.btn__block-noncolor:hover {
+    background-color:#BC3324;
+    color:#FFFFFF;
+}
+
+/* Блок информации и контактов */
+
+.square__image {
+    width: 20px;
+    height: 20px;
+}
+
+.information {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    max-width: 1414px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.block__square {
+    display: flex;
+    width: 100%;
+    max-width: 105px;
+    min-width: 65px;
+    height: 105px;
+    margin-bottom: 40px;
+    min-height: auto;
+    background-color: #1F1E1E;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-block {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.information-text {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 401px;
+    height: 66px;
 }
