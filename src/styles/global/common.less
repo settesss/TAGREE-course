@@ -1,0 +1,45 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 147px;
+    font-family: @font1;
+    background-color: @grey;
+    background-image: url(../../assets/images/noise.png);
+    background-position: 0 0, 0 0;
+    background-size: auto, 100% auto;
+    background-repeat: repeat, repeat-y;
+    font-weight: 400;
+    font-size: @font-size;
+    line-height: 1.3;
+    color: @black;
+    overflow-x: hidden;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+a {
+    color: @black;
+    outline: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}

@@ -1,52 +1,93 @@
 <!DOCTYPE html>
-<html lang = "ru">
-    
-    @@include('blocks/head.html') 
+<html lang="ru">
 
-    <body class = "body">
-        
-        @@include('blocks/header.html') 
+<head>
+  <meta charset="UTF-8" />
+  <title>LENNI ART</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
 
-        <main class = "main">
-            <div class = "events">
-                <section class = "listing listing__events">
-                    <h2 class = "listing__section-title section-title">
-                        Мероприятия
-                    </h2>
-                    <div class = "listing__events-cards">
-                        @@loop('blocks/event-card.html', [
-                            {
-                                "class": "listing__events-cards",
-                                "img": "/assets/images/Nirvana.jpg",
-                                "alt": "Nirvana",
-                                "title": "Собираемся и слушаем альбом Nirvana. Nirvana",
-                                "description": "Это третий альбом группы...",
-                                "datetime": "2022-12-07T18:00",
-                                "time": "07.12.2022 | начало 18.00"
-                            },
-                            {
-                                "class": "listing__events-cards",
-                                "img": "/assets/images/Nirvana.jpg",
-                                "alt": "Nirvana",
-                                "title": "Собираемся и слушаем альбом Nirvana. Nirvana",
-                                "description": "Это третий альбом группы...",
-                                "datetime": "2022-12-07T18:00",
-                                "time": "07.12.2022 | начало 18.00"
-                            },
-                            {
-                                "class": "listing__events-cards",
-                                "img": "/assets/images/Nirvana.jpg",
-                                "alt": "Nirvana",
-                                "title": "Собираемся и слушаем альбом Nirvana. Nirvana",
-                                "description": "Это третий альбом группы...",
-                                "datetime": "2022-12-07T18:00",
-                                "time": "07.12.2022 | начало 18.00"
-                            }
-                        ])
-                    </div>
-                </section>
-            </div>
-            <!-- <div class = "view-button">
+<body class="body">
+
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">
+        <svg class="logo__icon" width="202" height="147">
+          <use xlink:href="assets/icons/symbols.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="header__navigation">
+        <a href="" class="header__events header__nav__link">Мероприятия</a>
+        <a href="" class="header__blog header__nav__link">Блог</a>
+        <a href="" class="header__about header__nav__link">О нас</a>
+        <a href="" class="header__contacts header__nav__link">Контакты</a>
+      </nav>
+      <div class="header__right-block">
+        <a href="#" class="header__button button">Войти</a>
+      </div>
+      <!--<div class = "header__rectangle"></div>-->
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="events">
+      <section class="listing listing__events">
+        <h2 class="listing__section-title section-title">
+          Мероприятия
+        </h2>
+        <div class="listing__events-cards">
+          <article class="event-card listing__events-cards">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+                <img src="/assets/images/Nirvana.jpg" alt="Nirvana" class="event-card__img">
+              </picture>
+              <h4 class="event-card__title">
+                Собираемся и слушаем альбом Nirvana. Nirvana
+              </h4>
+              <p class="event-card__description">
+                Это третий альбом группы...
+              </p>
+              <time class="event-card__time" datetime="2022-12-07T18:00">07.12.2022 | начало 18.00</time>
+            </a>
+          </article>
+          <article class="event-card listing__events-cards">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+                <img src="/assets/images/Nirvana.jpg" alt="Nirvana" class="event-card__img">
+              </picture>
+              <h4 class="event-card__title">
+                Собираемся и слушаем альбом Nirvana. Nirvana
+              </h4>
+              <p class="event-card__description">
+                Это третий альбом группы...
+              </p>
+              <time class="event-card__time" datetime="2022-12-07T18:00">07.12.2022 | начало 18.00</time>
+            </a>
+          </article>
+          <article class="event-card listing__events-cards">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+                <img src="/assets/images/Nirvana.jpg" alt="Nirvana" class="event-card__img">
+              </picture>
+              <h4 class="event-card__title">
+                Собираемся и слушаем альбом Nirvana. Nirvana
+              </h4>
+              <p class="event-card__description">
+                Это третий альбом группы...
+              </p>
+              <time class="event-card__time" datetime="2022-12-07T18:00">07.12.2022 | начало 18.00</time>
+            </a>
+          </article>
+        </div>
+      </section>
+    </div>
+    <!-- <div class = "view-button">
                 <div class = "view-button__text">Показать еще</div>
                 <a href = "#" alt = "Button" class = "view-button__image">
                     <svg viewBox="0 0 62 92" fill="none" xmlns="http://www.w3.org/2000/svg" class = "button__arrow">
@@ -293,5 +334,6 @@
                 </div>
             </div>
         </footer> -->
-    </body>
+</body>
+
 </html>
