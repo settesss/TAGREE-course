@@ -1,0 +1,62 @@
+.services {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &-text {
+        max-width: 868px;
+    }
+
+    &__table {
+        display: table;
+        text-align: center;
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        border-collapse: collapse;
+        font-size: 18px;
+        line-height: 25px;
+        
+        tr &-service {
+            text-align: start;
+            max-width: 100%;
+            min-width: 188px;
+        }
+        
+        &-body tr:nth-child(odd) {
+            background: rgba(31, 30, 30, 0.03);;
+        }
+        
+        &-icon {
+            width: 1.3em;
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        td {
+            height: 50px;
+            max-height: 100px;
+        }
+        
+        td:not(:last-child) {
+            border-right: 1px solid #c7c7c7;
+        }
+
+        tr:not(:last-child) {
+            border-bottom: 1px solid #c7c7c7;
+        }
+        
+        th {
+            padding: 30px 50px;
+        }
+        
+        th:not(:first-child) {
+            border-left: 1px solid #c7c7c7;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.footer {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &__lines {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 1414px;
+        justify-content: space-between;
+        margin: 0px auto 60px;
+
+        &-line1 {
+            width: 618px;
+            height: 2px;
+            background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86%);
+        }
+        &-line2 {
+            width: 618px;
+            height: 2px;
+            background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 100%);
+        }
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        &-link {
+            display: flex;
+            flex-direction: row;
+            width: 230px;
+            height: 198px;
+        }
+
+        .link__rectangle {
+            width: 4px;
+            height: 198px;
+            background-color: #BC3324;
+        }
+        
+        .link-text {
+            padding-left: 22px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    &-link {
+        color: @black;
+        transition: color 0.2s;
+
+        &:hover {
+            color: @red_hover;
+        }
+    }
+
+    &-mail {
+        display: flex;
+        flex-direction: column;
+
+        &__subscribe-block {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 15px;
+        }
+
+        &__input {
+            width: 100%;
+            max-width: 410px;
+            padding-left: 28px;
+            background-color: #FFFFFF;
+            border: none;
+        }
+
+        &__subscribe-button {
+            display: flex;
+            background-color: #1F1E1E;
+            color: #FFFFFF;
+            width: 100%;
+            height: 49px;
+            max-width: 135px;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+    }
+
+}
