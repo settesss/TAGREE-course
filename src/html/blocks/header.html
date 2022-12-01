@@ -5,15 +5,32 @@
                 <use xlink:href="assets/icons/symbols.svg#logo"></use>
             </svg>
         </a>
-        <nav class = "header__navigation">
-            <a href = "events.html" class = "header__events header__nav__link">Мероприятия</a>
-            <a href = "" class = "header__blog header__nav__link">Блог</a>
-            <a href = "" class = "header__about header__nav__link">О нас</a>
-            <a href = "" class = "header__contacts header__nav__link">Контакты</a>
+        <nav class = "header__nav">
+            <a href = "events.html" class = "header__events header__nav-link">Мероприятия</a>
+            <a href = "" class = "header__blog header__nav-link">Блог</a>
+            <a href = "" class = "header__about header__nav-link">О нас</a>
+            <a href = "" class = "header__contacts header__nav-link">Контакты</a>
+
+            <div class="header__nav-user">
+                <a href="#" class="header__nav-user-link">
+                    Никита А.
+                </a>
+
+                <a href="#" class="header__nav-logout">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="assets/icons/symbols.svg#logout"></use>
+                    </svg>
+                </a>
+            </div>
         </nav>
         <div class = "header__right-block">
-            <a href = "#" class = "header__button button">Войти</a>
+            <a href = "#" class = "header__user-btn">
+                Войти
+                <svg class = "page-header__user-icon" width="21"height="18">
+                    <use xlink:href="assets/icons/symbols.svg#user"></use>
+                </svg>
+            </a>
+            <button type="button" class="header__nav-toggle"></button>
         </div>
-        <!--<div class = "header__rectangle"></div>-->
     </div>
 </header>

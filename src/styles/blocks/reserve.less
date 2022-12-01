@@ -7,25 +7,89 @@
     "checkbox scheme"
     "order legend";
 
-    &__checkbox {
-        grid-area: checkbox;
-        background-color: red;
+    @media @bw1340 {
+        gap: 65px 6.5%;
+        grid-template-columns: 340px calc(93.5% - 340px);
     }
-    
-    &__scheme {
-        grid-area: scheme;
-        background-color: yellow;
-        height: 100px;
+    @media @bw1020 {
+        gap: 60px;
+        grid-template-columns: auto 390px;
+        grid-template-areas: 
+          "scheme scheme"
+          "checks legend"
+          "checks order"; 
     }
-    
+    @media @bw768 {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+          "scheme"
+          "legend"
+          "checks"
+          "order"; 
+    }
+
+    &__checks {
+        display: flex;
+        row-gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__scheme-wrapper {
+        position: relative;
+        width: 100%;
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            padding-top: 51.154%;
+        }
+    }
+    &__scene {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     &__order {
-        grid-area: order;
-        background-color: green;
+        display: flex;
+        flex-direction: column;
     }
-    
-    &__legend {
-        grid-area: legend;
-        background-color: blueviolet;
-        height: 100px;
+    &__tickets {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 18px;
+    }
+    &__qty {
+        &::after {
+            content: " " attr(data-caption) " | " attr(data-price);
+        }
+    }
+    &__sum {
+        &::after {
+            content: attr(data-currency);
+            margin-left: 4px;
+            font-size: 0.95em;
+        }
+    }
+    &__total {
+        margin: 8px auto 0;
+        
+        &::before {
+            content: attr(data-caption);
+            margin-right: 30px;
+        }
+        &::after {
+            content: attr(data-currency);
+            margin-left: 4px;
+            font-size: 0.95em;
+        }
+    }
+
+    &__submit {
+        margin-top: 53px;
     }
 }
