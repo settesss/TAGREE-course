@@ -160,7 +160,6 @@ textarea:focus::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 272px;
   height: 52px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -172,6 +171,7 @@ textarea:focus::placeholder {
   border: 1px solid #1F1E1E;
 }
 .button__wishes-block--red {
+  width: 272px;
   border-color: #BC3324;
   background-color: #BC3324;
   color: #FFFFFF;
@@ -185,6 +185,7 @@ textarea:focus::placeholder {
   color: #FFFFFF;
 }
 .button__wishes-block--noncolor {
+  width: 245.88px;
   -webkit-transition: background-color 0.2s, color 0.2s;
   -o-transition: background-color 0.2s, color 0.2s;
   transition: background-color 0.2s, color 0.2s;
@@ -561,6 +562,30 @@ textarea:focus::placeholder {
 .form__close-btn:hover {
   color: #A51505;
 }
+.quotes__block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
+}
+.quotes__block-quote {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+  font-family: "Lora", serif;
+  line-height: 57.6px;
+}
 .pp {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -811,28 +836,39 @@ textarea:focus::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10px auto 100px;
-  width: 50%;
-  max-width: 648px;
+  margin: 0 auto 200px;
+  width: 100%;
+  max-width: 624px;
   min-height: 132px;
   text-align: center;
 }
+.wishes__block__header {
+  margin: 0 auto;
+  width: 90px;
+}
 .wishes__block__title {
-  margin-top: 0;
-  margin-bottom: 50px;
+  display: inline-block;
+  font-family: "Lora", serif;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 2%;
+  margin: 0 auto 46px;
 }
 .wishes__block-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 624px;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 106.12px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: auto 5px;
+  margin: 0 auto;
 }
 .information {
   -webkit-box-sizing: border-box;

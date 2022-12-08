@@ -1,21 +1,33 @@
 .wishes__block {
     display: flex;
     flex-direction: column;
-    margin: 10px auto 100px;
-    width: 50%;
-    max-width: 648px;
+    margin: 0 auto 200px;
+    width: 100%;
+    max-width: 624px;
     min-height: 132px;
     text-align: center;
 
+    &__header {
+        margin: 0 auto;
+        width: 90px;
+    }
+
     &__title {
-        margin-top: 0;
-        margin-bottom: 50px;
+        display: inline-block;
+        font-family: @font3;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 2%;
+        margin: 0 auto 46px;
     }
 
     &-btns {
         display: flex;
+        max-width: 624px;
+        width: 100%;
         flex-direction: row;
+        gap: 106.12px;
         justify-content: space-between;
-        margin: auto 5px;
+        margin: 0 auto;
     }
 }

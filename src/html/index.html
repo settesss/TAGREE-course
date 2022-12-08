@@ -6,8 +6,10 @@
     <body class = "body">
         
         @@include('blocks/header.html') 
-
+        
         <main class = "main">
+            @@include('blocks/quotes.html')
+            @@include('blocks/wishes.html')
             <div class="home">
                 @@include('blocks/blog-listing.html', { "class": "home__blog-listing"})
             </div>
