@@ -62,4 +62,45 @@
         background-color: @black;
         color: @white;
     }
+
+    &__arrow {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        transition: color 0.2s stroke 0.2s;
+        cursor: pointer;
+        &-text {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &:hover {
+            color: @red_hover;
+            stroke: @red_hover;
+        }
+    }
+
+    &__slider {
+        &--left {
+            transform: rotate(180deg);
+            margin-right: 119px;
+        }
+        &-rect {
+            width: 15px;
+            height: 2px;
+            background-color: @grey_2;
+            margin: 0 3px;
+            border-radius: 2px;
+            &--active {
+                background-color: @black;
+            }
+        }
+        &--right {
+            margin-left: 119px;
+        }
+    }
 }

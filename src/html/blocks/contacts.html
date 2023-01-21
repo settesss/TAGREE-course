@@ -1,0 +1,37 @@
+<div class="contacts">
+    <h2 class="section-title contacts__section-title">
+        Контакты
+    </h2>
+
+    <div class="contacts-block">
+        <div class="contacts-block__list">
+            @@loop('contact.html', [
+            {
+                "class": "contact-cell",
+                "img": "ellipse",
+                "title": "Томск, Белая 8",
+                "text-upper": "2 этаж",
+                "text-lower": "оф. 207-208"
+            },
+            {
+                "class": "contact-cell",
+                "img": "house",
+                "title": "Отдел аренды",
+                "text-upper": "+7 499 350 0730",
+                "text-lower": "hi@tagree.ru"
+            },
+            {
+                "class": "contact-cell",
+                "img": "star",
+                "title": "Отдел мероприятий",
+                "text-upper": "+7 499 350 0730",
+                "text-lower": "hi@tagree.ru"
+            }
+        ])
+        </div>
+        <img src="../assets/images/Map.png" alt="Map" class="contacts-map">
+    </div>
+</div>
+<div class="index-quote">
+    Просто делайте, что нравится,<br>а мы вам поможем
+</div>

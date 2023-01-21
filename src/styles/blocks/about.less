@@ -1,0 +1,95 @@
+.about {
+    max-width: 1414px;
+    margin: 0 auto 210px;
+
+    &__txtblock {
+        padding: 0 40px;
+        margin-bottom: 100px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            margin-bottom: 50px;
+            margin-top: 0;
+            font-size: 44px;
+        }
+        &-text {
+            font-size: 18px;
+            text-align: left;
+            max-width: 867px;
+            margin-left: auto;
+        }
+    }
+
+    &__picsblock {
+        padding: 0 40px;
+        &--down {
+            text-align: left;
+            max-width: 867px;
+            width: 100%;
+            font-size: 18px;
+            margin-left: auto;
+            margin-bottom: 110px;
+            line-height: 25px;
+        }
+    }
+    &__pics {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        &--left {
+            display: flex;
+            flex-direction: column;
+            max-width: 870px;
+            &__text {
+                font-size: 44px;
+                margin-top: 100px;
+            }
+        }
+
+        &--right {
+            margin-top: auto;
+        }
+    }
+
+    &__projects {
+        padding: 0 40px;
+        display: flex;
+        height: 380px;
+        flex-direction: row;
+        justify-content: space-between;
+        &-pics {
+            max-width: 930px;
+            width: 100%;
+            &__rect {
+                box-sizing: border-box;
+                position: absolute;
+                width: 930px;
+                height: 246px;
+                background-color: #BC3324;
+                z-index: -1;
+            }
+            &__pic {
+                position: relative;
+                top: 20px;
+                left: 49px;
+                max-width: 872.5px;
+            }
+        }
+        &-quote {
+            box-sizing: border-box;
+            max-width: 344px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            &__text {
+                margin-bottom: 89px;
+                text-align: left;
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+    }
+}
