@@ -8,11 +8,14 @@
         @@include('blocks/header.html') 
 
         <main class = "main">
+            <div class="path path-event">Главная  / Мероприятия / Вечер | The Best of Sade </div>
             <div class = "event">
+                <h1 class="event-title">Вечер | The Best of Sade</h1>
+                @@include('blocks/event-picture.html')
+                @@include('blocks/event-text-block.html')
                 @@include('blocks/reserve.html')
             </div>
         </main>
-        <footer class = "footer">
-        </footer>
+        @@include('blocks/footer.html')
     </body>
 </html>

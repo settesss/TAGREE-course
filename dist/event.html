@@ -54,7 +54,70 @@
   </header>
 
   <main class="main">
+    <div class="path path-event">Главная / Мероприятия / Вечер | The Best of Sade </div>
     <div class="event">
+      <h1 class="event-title">Вечер | The Best of Sade</h1>
+      <div class="event-pic">
+        <div class="event-pic__side">
+          <div class="event-pic__rect"></div>
+          <div class="event-pic__text--high">16/12/2022</div>
+          <div class="event-pic__text--low">Кафе «Птичка»</div>
+          <div class="event-pic__rect"></div>
+        </div>
+        <div class="event-pic__img">
+          <img src="../assets/images/Sade.jpg" alt="Sade">
+        </div>
+        <div class="event-pic__side">
+          <div class="event-pic__rect event-pic__rect--right"></div>
+          <div class="event-pic__text--high">20.00<span class="event-pic__text--low">начало</span>
+          </div>
+          <div class="event-pic__text--low">Ленина 10 | 2 этаж</div>
+          <div class="event-pic__rect event-pic__rect--right"></div>
+        </div>
+      </div>
+      <div class="event-tblock">
+        <div class="event-tblock__program">
+          <h2 class="event-tblock__title event-tblock__title--up">Программа мероприятия:</h2>
+          <div class="event-tblock__list--unord content">
+            <ul>
+              <li>20:15 — Приветствие гостей</li>
+              <li>20:30 — Первая подача блюд | Салаты</li>
+              <li>20:40 — Живой вокал | Композиции 1-3</li>
+              <li>21:20 — Подача горячих блюд </li>
+              <li>21:30 — Живой вокал | Композиции 4-7</li>
+              <li>22:15 — Подача десерта</li>
+              <li>22:30 — Живой вокал | Композиции 8-9</li>
+              <li>23:00 — Завершение вечера</li>
+            </ul>
+          </div>
+        </div>
+        <div class="event-tblock__name">
+          <h2 class="event-tblock__title">The Best Of Sade</h2>
+          <div class="vent-tblock__text">
+            Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков,
+            включая самые популярные хиты группы, раритеты и их любимые треки.
+            <br>
+            <br>
+            Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
+            <br>
+            Она лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США
+            и продав более 2 миллионов копий в Европе.
+          </div>
+          <div class="event-tblock__list--ord content">
+            <ol>
+              <li>Your Love Is King</li>
+              <li>Hang On To Your Love</li>
+              <li>Smooth Operator</li>
+              <li>Jezebel</li>
+              <li>The Sweetest Taboo</li>
+              <li>Is It A Crime</li>
+              <li>Never As Good As The First Time</li>
+              <li>Love Is Stronger Than Pride</li>
+              <li>Paradise</li>
+            </ol>
+          </div>
+        </div>
+      </div>
       <form class="reserve">
         <div class="reserve__checks">
           <h4 class="reserve__section-title">Забронировать столик</h4>
@@ -306,10 +369,92 @@
 
           <button class="btn btn--red reserve__submit" type="submit">Купить билеты</button>
         </div>
+        <div class="reserve__legend">
+          <h4 class="reserve__legend-title reserve__section-title">Стоимость пригласительного билета</h4>
+          <div class="reserve__legend-person">
+            <div class="reserve__legend-square reserve__legend-square--red"></div>
+            <div class="reserve__legend-text">1400 ₽ | 1 персона</div>
+          </div>
+          <div class="reserve__legend-person">
+            <div class="reserve__legend-square reserve__legend-square--black"></div>
+            <div class="reserve__legend-text">1250 ₽ | 1 персона</div>
+          </div>
+          <h4 class="reserve__legend-title reserve__section-title">Примечание</h4>
+          <div class="reserve__legend-note">
+            <div class="reserve__legend-ellipse reserve__legend-ellipse--black"></div>
+            <div class="reserve__legend-ellipse reserve__legend-ellipse--red"></div>
+            <div class="reserve__legend-text">доступные места</div>
+          </div>
+          <div class="reserve__legend-note">
+            <div class="reserve__legend-ellipse reserve__legend-ellipse--gray"></div>
+            <div class="reserve__legend-text">забронировано</div>
+          </div>
+        </div>
       </form>
     </div>
   </main>
   <footer class="footer">
+    <div class="footer__lines">
+      <div class="footer__lines-line1"></div>
+      <div class="footer__lines-line2"></div>
+    </div>
+    <div class="footer__information">
+      <div class="footer__information-link">
+        <div class="link__rectangle"></div>
+        <div class="link-text">
+          <a href="#" class="footer-link">Календарь мероприятий</a>
+          <a href="#" class="footer-link">Провести мероприятие</a>
+          <a href="#" class="footer-link">Стать арендатором</a>
+          <a href="#" class="footer-link">Наши проекты</a>
+          <a href="#" class="footer-link">Контакты</a>
+        </div>
+      </div>
+      <div class="footer-mail">
+        <h4 class="footer-mail__subscribe-text">Подпишись и будь в курсе происходящего</h4>
+        <div class="footer-mail__subscribe-block">
+          <input type="email" placeholder="Email" class="footer-mail__input">
+          <a href="#" class="footer-mail__subscribe-button">
+            <p class="mail__subscribe-button-text">Подписаться</p>
+          </a>
+        </div>
+        <label class="footer-mail__checkbox-text check">
+          <input type="checkbox" class="footer-mail__checkbox-checkmark check__input" required />
+          <span class="check__mark"></span>
+          <span>Согласен на обработку персональных данных</span>
+        </label>
+      </div>
+    </div>
+    <div class="footer-orgaspects">
+      <div class="footer-orgaspects-text">
+        <div class="footer-orgaspects__millenials">
+          <p class="footer-orgaspects__millenials-text">&#169; Millennials 2022</p>
+        </div>
+        <div class="footer-orgaspects__policy">
+          <a href="#" class="footer-orgaspects__policy-text">Политика конфиденциальности</a>
+          <a href="#" class="footer-orgaspects__cookies-text">Cookies</a>
+        </div>
+      </div>
+      <div class="footer-orgaspects__social">
+        <a href="" class="footer-orgaspects-link">
+          <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-orgaspects-logo">
+            <use xlink:href="assets/icons/symbols.svg#Insta"></use>
+          </svg>
+        </a>
+        <a href="" class="footer-orgaspects-link">
+          <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-orgaspects-logo">
+            <use xlink:href="assets/icons/symbols.svg#VK"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer-orgaspects__tagree">
+        <p class="footer-orgaspects__tagree-text">Создание и продвижение</p>
+        <a href="" class="footer-orgaspects__tagree-link">
+          <svg viewBox="0 0 57 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-orgaspects__tagree-icon">
+            <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
   </footer>
 </body>
 

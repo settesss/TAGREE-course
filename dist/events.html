@@ -55,6 +55,7 @@
 
   <main class="main">
     <div class="events">
+      <div class="path">Главная / Мероприятия</div>
       <section class="listing listing__events">
         <h2 class="listing__section-title section-title">
           Мероприятия
@@ -180,9 +181,9 @@
         <tbody class="services__table-body">
           <tr>
             <td class="services__table-service">Стоимость за час</td>
-            <td>1000Р</td>
-            <td>3000Р</td>
-            <td>от 6000Р</td>
+            <td>1000&#8381;</td>
+            <td>3000&#8381;</td>
+            <td>от 6000&#8381;</td>
           </tr>
           <tr>
             <td class="services__table-service">Ведущий мероприятия</td>
@@ -343,9 +344,10 @@
             <p class="mail__subscribe-button-text">Подписаться</p>
           </a>
         </div>
-        <label class="footer-mail__checkbox-text">
-          <input type="checkbox" class="footer-mail__checkbox-checkmark">
-          Согласен на обработку персональных данных
+        <label class="footer-mail__checkbox-text check">
+          <input type="checkbox" class="footer-mail__checkbox-checkmark check__input" required />
+          <span class="check__mark"></span>
+          <span>Согласен на обработку персональных данных</span>
         </label>
       </div>
     </div>

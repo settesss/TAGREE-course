@@ -1,5 +1,9 @@
 .event { 
-    padding: 140px 0 100px;
+    box-sizing: border-box;
+    max-width: 1414px;
+    width: 100%;
+    margin: 0 auto 150px;
+    padding: 0 40px;
 
     &-card {
         display: flex;
@@ -121,5 +125,121 @@
 
     &__arrow:hover {
         color: @red;
+    }
+
+    &-title {
+        box-sizing: border-box;
+        font-family: @font3;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 70px;
+        line-height: 90px;
+        margin: 0 auto 80px;
+        max-width: 819px;
+    }
+
+    &-pic {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        max-width: 943px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 80px;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    
+        &__side {
+            display: flex;
+            flex-direction: column;
+            max-height: 92px;
+            min-height: 56px;
+            gap: 11px;
+        }
+        &__rect {
+            width: 139px;
+            height: 1px;
+            margin-left: auto;
+            background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86%);
+            &--right {
+                margin-left: 0;
+                transform: rotate(180deg);
+            }
+        }
+    
+        &__text--high {
+            display: flex;
+            align-items: baseline;
+            font-family: @font2;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 36px;
+            gap: 12px;
+        }
+        &__text--low {
+            font-family: @font2;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+    }
+
+    &-tblock {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        gap: 75px;
+        margin-bottom: 80px;
+
+        &__program {
+            max-width: 419px;
+            width: 100%;
+            max-height: 302px;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__title {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-family: @font1;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            &--up {
+                margin-bottom: 5px
+            }
+        }
+
+        &__list {
+            &--unord {
+                font-family: @font1;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+            }
+            &--ord {
+                margin-top: 50px;
+            }
+        }
+
+        &__name {
+            max-width: 870px;
+            width: 100%;
+            font-family: @font1;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
 }

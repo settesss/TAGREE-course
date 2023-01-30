@@ -53,7 +53,7 @@
             content: '';
             position: absolute;
             display: block;
-            top: 8px;
+            top: 14.5px;
             left: 0;
             width: 4px;
             height: 4px;
@@ -65,6 +65,7 @@
 
     ol > li{
         counter-increment: li;
+        margin-bottom: 5px;
 
         &::before {
             content: counter(li) + '.';
@@ -72,15 +73,9 @@
             display: inline-block;
             min-width: 20px;
             white-space: pre;
-            color: @red;
+            color: @black;
         }
     }
-
-    a{}
-
-    i{}
-
-    b{}
 
     figure{
         display: block;
@@ -117,8 +112,4 @@
             margin-bottom: 0;
         }
     }
-
-    img{}
-
-
 }
