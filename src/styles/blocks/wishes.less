@@ -4,11 +4,22 @@
     margin: 0 auto 200px;
     width: 100%;
     max-width: 624px;
-    min-height: 132px;
     text-align: center;
+    gap: 46px;
+    @media @bw1660 {
+        max-width: 604px;
+    }
+    @media @bw1020 {
+        max-width: 566px;
+        gap: 43px;
+    }
+    @media @bw650 {
+        max-width: 280px;
+        gap: 25px;
+    }
 
     &__header {
-        margin: 0 auto 0 272px;
+        margin: auto;
         width: 90px;
     }
 
@@ -17,8 +28,13 @@
         font-family: @font3;
         font-size: 22px;
         line-height: 30px;
-        margin: 0 auto 46px;
+        margin: auto;
         text-transform: uppercase;
+        @media @bw650 {
+            font-size: 13px;
+            line-height: 17px;
+            letter-spacing: 0.02em;
+        }
     }
 
     &-btns {
@@ -26,8 +42,10 @@
         max-width: 624px;
         width: 100%;
         flex-direction: row;
-        gap: 106.12px;
         justify-content: space-between;
-        margin: 0 auto;
+        @media @bw650 {
+            flex-direction: column;
+            gap: 25px;
+        }
     }
 }

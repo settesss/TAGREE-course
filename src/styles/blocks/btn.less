@@ -8,12 +8,20 @@
     }
 
     &__wishes-block {
+        font-family: @font1;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
         display: flex;
         height: 52px;
         justify-content: center;
         align-items: center;
         text-decoration: none;
         border: 1px solid @black;
+        @media @bw650 {
+            height: 49px;
+            font-size: 14px;
+        }
 
         &--red {
             width: 272px;
@@ -21,6 +29,9 @@
             background-color: @red;
             color: @white;
             transition: background-color 0.2s, color 0.2s,  border-color 0.2s;
+            @media @bw650 {
+                width: auto;
+            }
         }
 
         &--red:hover {
@@ -30,8 +41,12 @@
         }
 
         &--noncolor {
+            background-color: transparent;
             width: 245.88px;
             transition: background-color 0.2s, color 0.2s;
+            @media @bw650 {
+                width: auto;
+            }
         }
 
         &--noncolor:hover {
@@ -82,25 +97,38 @@
             color: @red_hover;
             stroke: @red_hover;
         }
+        @media @bw1340 {
+            max-width: 280px;
+            width: 100%;
+        }
     }
 
     &__slider {
         &--left {
             transform: rotate(180deg);
             margin-right: 119px;
-        }
-        &-rect {
-            width: 15px;
-            height: 2px;
-            background-color: @grey_2;
-            margin: 0 3px;
-            border-radius: 2px;
-            &--active {
-                background-color: @black;
+            @media @bw768 {
+                margin-right: 56px;
+            }
+            @media @bw600 {
+                margin-right: 46px;
             }
         }
         &--right {
             margin-left: 119px;
+            @media @bw768 {
+                margin-left: 56px;
+            }
+            @media @bw600 {
+                margin-left: 46px;
+            }
         }
+    }
+}
+
+.arrow__icon {
+    @media @bw1340 {
+        width: 67px;
+        height: 40px;
     }
 }
