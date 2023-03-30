@@ -2510,6 +2510,9 @@ tr .services__table-service {
     padding: 11px 40px;
     font-size: 20px;
   }
+  .blog-card {
+    padding: 0 30px;
+  }
   .reserve {
     gap: 65px 6.5%;
     grid-template-columns: 340px calc(93.5% - 340px);
@@ -2530,6 +2533,9 @@ tr .services__table-service {
   }
   .listing__events-cards {
     margin: 0 -15px -100px;
+  }
+  .blog-listing__text {
+    padding: 0 30px;
   }
   .event-card {
     width: calc(33.3333% - 30px);
@@ -2591,6 +2597,17 @@ tr .services__table-service {
   }
 }
 @media (max-width: 1019px) {
+  .blog-card {
+    max-width: 708px;
+    margin-bottom: 55px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .wishes__block {
     max-width: 566px;
     gap: 43px;
@@ -2792,6 +2809,10 @@ tr .services__table-service {
     font-size: 30px;
     line-height: 38px;
   }
+  .blog-card {
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
   .reserve {
     grid-template-columns: 100%;
     grid-template-areas: "scheme" "legend" "checks" "order";
@@ -2825,6 +2846,10 @@ tr .services__table-service {
   }
   .listing__events-cards {
     margin: 0 -10px -80px;
+  }
+  .blog-listing__text {
+    height: 49px;
+    padding: 0 20px;
   }
   .event-card {
     margin: 0 10px 80px;
@@ -2996,6 +3021,15 @@ tr .services__table-service {
   .section-title {
     font-size: 16px;
     width: 280px;
+  }
+  .blog-card__picture {
+    max-width: 280px;
+  }
+  .blog-card__info {
+    padding-right: 50px;
+  }
+  .blog-card__arrow {
+    bottom: 0;
   }
   .about__projects-pics__pic {
     max-width: 267px;
