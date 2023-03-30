@@ -86,7 +86,7 @@
         text-decoration: none;
         background-color: transparent;
         border: none;
-        transition: color 0.2s stroke 0.2s;
+        transition: color 0.2s;
         cursor: pointer;
         &-text {
             font-weight: 600;
@@ -94,8 +94,7 @@
             line-height: 22px;
         }
         &:hover {
-            color: @red_hover;
-            stroke: @red_hover;
+            color: @red;
         }
         @media @bw1340 {
             max-width: 280px;
@@ -126,9 +125,28 @@
     }
 }
 
-.arrow__icon {
+.arrow {
+    flex-shrink: 0;
+    position: relative;
+    display: inline-block;
+    width: 92px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: @black;
+    font-size: 0;
+    text-decoration: none;
+    transition: color 0.2s;
     @media @bw1340 {
         width: 67px;
         height: 40px;
+    }
+    &:hover {
+        color: @red;
+    }
+    &__icon {
+        width: 100%;
+        height: 100%;
     }
 }

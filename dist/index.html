@@ -95,7 +95,7 @@
             <div class="about__pics--left__text">Мы предоставляем площади для вашего мероприятия</div>
           </div>
           <div class="about__pics--right">
-            <img src="..\assets\images\pic_1.jpg" alt="Tramp:)">
+            <img src="..\assets\images\pic_1.jpg" alt="Tramp">
           </div>
         </div>
         <div class="about__picsblock--down">
@@ -116,12 +116,12 @@
           <div class="about__projects-quote__text">
             Мы уже успешно организовали и провели более 100 проектов. Посмотрите, как это было классно.
           </div>
-          <a href="#" class="btn__arrow">
+          <button href="#" class="btn__arrow">
             <div class="btn__arrow-text">Смотреть</div>
-            <svg class="arrow__icon" width="92" height="62">
+            <svg class="arrow" width="92" height="62">
               <use xlink:href="assets/icons/symbols.svg#arrow-right"></use>
             </svg>
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -178,7 +178,7 @@
 
         <div class="events-block__slider-btns">
           <a href="#" class="btn__arrow btn__slider--left">
-            <svg class="arrow__icon" width="92" height="62">
+            <svg class="arrow" width="92" height="62">
               <use xlink:href="assets/icons/symbols.svg#arrow-right"></use>
             </svg>
           </a>
@@ -190,7 +190,7 @@
             <div class="events-block__slider-rect"></div>
           </div>
           <a href="#" class="btn__arrow btn__slider--right">
-            <svg class="arrow__icon" width="92" height="62">
+            <svg class="arrow" width="92" height="62">
               <use xlink:href="assets/icons/symbols.svg#arrow-right"></use>
             </svg>
           </a>
@@ -210,6 +210,11 @@
           <article class="blog-card blog-listing__blog-card">
             <a href="#" class="blog-card__link">
               <picture class="blog-card__picture">
+                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/blog1/fotosession.webp" />
+                <source media="(max-width: 450px)" srcset="assets/images/blog/blog1/fotosession.jpg" />
+                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/blog1/fotosession_tablet.webp" />
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/blog1/fotosession_tablet.jpg" />
+                <source type="image/webp" srcset="assets/images/blog/blog1/fotosession.webp" />
                 <img src="assets/images/blog/blog1/fotosession.jpg" alt="Фотосессия" class="blog-card__img">
               </picture>
             </a>
@@ -219,7 +224,7 @@
               <a href="#" class="blog-card__title-link">
                 <h4 class="blog-card__title">Фотосессия в стенах Театра драмы</h4>
                 <div class="blog-card__arrow arrow">
-                  <svg class="arrow__icon" width="92" height="62">
+                  <svg class="arrow" width="92" height="62">
                     <use xlink:href="assets/icons/symbols.svg#arrow-right"></use>
                   </svg>
                 </div>
@@ -230,7 +235,12 @@
           <article class="blog-card blog-listing__blog-card">
             <a href="#" class="blog-card__link">
               <picture class="blog-card__picture">
-                <img src="assets/images/blog/blog1/выставка VR.jpg" alt="VR" class="blog-card__img">
+                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/blog1/выставка_VR.webp" />
+                <source media="(max-width: 450px)" srcset="assets/images/blog/blog1/выставка_VR.jpg" />
+                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/blog1/выставка_VR_tablet.webp" />
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/blog1/выставка_VR_tablet.jpg" />
+                <source type="image/webp" srcset="assets/images/blog/blog1/выставка_VR.webp" />
+                <img src="assets/images/blog/blog1/выставка_VR.jpg" alt="VR" class="blog-card__img">
               </picture>
             </a>
 
@@ -239,7 +249,7 @@
               <a href="#" class="blog-card__title-link">
                 <h4 class="blog-card__title">Выставка VR в Томске</h4>
                 <div class="blog-card__arrow arrow">
-                  <svg class="arrow__icon" width="92" height="62">
+                  <svg class="arrow" width="92" height="62">
                     <use xlink:href="assets/icons/symbols.svg#arrow-right"></use>
                   </svg>
                 </div>
@@ -250,7 +260,12 @@
           <article class="blog-card blog-listing__blog-card">
             <a href="#" class="blog-card__link">
               <picture class="blog-card__picture">
-                <img src="assets/images/blog/blog1/rocking radio.jpg" alt="Rocking Radio" class="blog-card__img">
+                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/blog1/rocking_radio.webp" />
+                <source media="(max-width: 450px)" srcset="assets/images/blog/blog1/rocking_radio.jpg" />
+                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/blog1/rocking_radio_tablet.webp" />
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/blog1/rocking_radio_tablet.jpg" />
+                <source type="image/webp" srcset="assets/images/blog/blog1/rocking_radio.webp" />
+                <img src="assets/images/blog/blog1/rocking_radio.jpg" alt="Rocking Radio" class="blog-card__img">
               </picture>
             </a>
 
@@ -259,7 +274,7 @@
               <a href="#" class="blog-card__title-link">
                 <h4 class="blog-card__title">Rocking radio в заброшенном ангаре</h4>
                 <div class="blog-card__arrow arrow">
-                  <svg class="arrow__icon" width="92" height="62">
+                  <svg class="arrow" width="92" height="62">
                     <use xlink:href="assets/icons/symbols.svg#arrow-right"></use>
                   </svg>
                 </div>
