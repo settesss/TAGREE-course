@@ -2510,8 +2510,46 @@ tr .services__table-service {
     padding: 11px 40px;
     font-size: 20px;
   }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 185px;
+    gap: 30px;
+  }
+  .contact-information {
+    margin-left: 0;
+  }
   .blog-card {
     padding: 0 30px;
+  }
+  .contacts {
+    padding: 0 30px;
+  }
+  .contacts-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 100px;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts-block__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+    max-width: 615px;
   }
   .reserve {
     gap: 65px 6.5%;
@@ -2611,6 +2649,13 @@ tr .services__table-service {
   .wishes__block {
     max-width: 566px;
     gap: 43px;
+  }
+  .index-quote {
+    width: 895px;
+    margin-left: 0;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 100px;
   }
   .reserve {
     gap: 60px;
@@ -2812,6 +2857,9 @@ tr .services__table-service {
   .blog-card {
     padding: 0 20px;
     margin-bottom: 30px;
+  }
+  .contacts {
+    padding: 0 20px;
   }
   .reserve {
     grid-template-columns: 100%;
@@ -3022,6 +3070,30 @@ tr .services__table-service {
     font-size: 16px;
     width: 280px;
   }
+  .contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .contact-rectangle {
+    min-width: 65px;
+    width: 65px;
+    height: 65px;
+  }
+  .contact-information {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .contact-information__title {
+    text-align: start;
+    font-size: 14px;
+    line-height: 19px;
+  }
   .blog-card__picture {
     max-width: 280px;
   }
@@ -3030,6 +3102,12 @@ tr .services__table-service {
   }
   .blog-card__arrow {
     bottom: 0;
+  }
+  .contacts-block__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .about__projects-pics__pic {
     max-width: 267px;

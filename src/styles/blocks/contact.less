@@ -2,6 +2,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    @media @bw1340 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 185px;
+        gap: 30px;
+    }
+    @media @bw600 {
+        flex-direction: row;
+        width: 100%;
+    }
 
     &-rectangle {
         min-width: 100px;
@@ -12,6 +23,11 @@
         justify-content: center;
         flex-wrap: nowrap;
         background-color: @black;
+        @media @bw600 {
+            min-width: 65px;
+            width: 65px;
+            height: 65px;
+        }
     }
 
     &-information {
@@ -21,11 +37,24 @@
         justify-content: center;
         gap: 5px;
         margin-left: 54px;
+        @media @bw1340 {
+            margin-left: 0;
+        }
+        @media @bw600 {
+            align-items: start;
+            font-size: 14px;
+            line-height: 19px;
+        }
 
         &__title {
             font-size: 20px;
             line-height: 27px;
             margin: 0 auto 5px;
+            @media @bw600 {
+                text-align: start;
+                font-size: 14px;
+                line-height: 19px;
+            }
         }
 
     }
