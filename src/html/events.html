@@ -45,7 +45,7 @@
                             },
                             {
                                 "class": "listing__events-cards",
-                                "img": "/assets/images/выставка Малевича.jpg",
+                                "img": "/assets/images/выставка_Малевича.jpg",
                                 "alt": "Bыставка Малевича",
                                 "title": "Выставка Малевича в Томске",
                                 "description": "Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче.",
@@ -54,7 +54,7 @@
                             },
                             {
                                 "class": "listing__events-cards",
-                                "img": "/assets/images/арт-съемка для Tatler.jpg",
+                                "img": "/assets/images/арт-съемка_для_Tatler.jpg",
                                 "alt": "Tatler",
                                 "title": "Мастер — класс по студийной съемке от Tatler",
                                 "description": "Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.",
@@ -63,7 +63,7 @@
                             },
                             {
                                 "class": "listing__events-cards",
-                                "img": "/assets/images/the hatters.jpg",
+                                "img": "/assets/images/the_hatters.jpg",
                                 "alt": "The Hatters",
                                 "title": "Повесилимся на славу на концерте The Hatters",
                                 "description": "Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге...",
@@ -72,32 +72,33 @@
                             }
                         ])
                     </div>
+                    <div class="btn__events">
+                        <button class = "btn__events-text">Показать ещё</button>
+                        <a href="#" class="btn__arrow btn__slider--down">
+                            <svg class = "arrow" width="92" height="62">
+                                <use xlink:href = "assets/icons/symbols.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </section>
             </div>
-            <a href = "#" class="button__events">
-                <p class="button__events-text">Показать ещё</p>
-                <div class="event__arrow arrow">
-                    <svg class = "arrow" width="62" height="92">
-                        <use xlink:href = "assets/icons/symbols.svg#arrow-bottom"></use>
-                    </svg>
-                </div>
-            </a>
+    
             <div class="services">
-                <section class="listing listing__table">
+                <section class="listing">
                     <h2 class="listing__section-title section-title">
                         Дополнительные услуги
                     </h2>
+                    <p class="services-text">
+                        Перед запуском проекта, мы подготавливаем
+                        подробную смету и согласуем ее с клиентом. Убедившись, что все пожеланию
+                        учтены и мы можем приступать к реализациии проекта, начинается сложная, 
+                        но интересная работа, результатом которой будет проведение вашего мероприятия
+                        на высшем уровне.
+                    </p>
+                    @@include('blocks/listing-table.html') 
+                    @@include('blocks/wishes.html')
+                    @@include('blocks/listing-information.html')
                 </section>
-                <p class="services-text">
-                    Перед запуском проекта, мы подготавливаем
-                    подробную смету и согласуем ее с клиентом. Убедившись, что все пожеланию
-                    учтены и мы можем приступать к реализациии проекта, начинается сложная, 
-                    но интересная работа, результатом которой будет проведение вашего мероприятия
-                    на высшем уровне.
-                </p>
-                @@include('blocks/listing-table.html') 
-                @@include('blocks/wishes.html')
-                @@include('blocks/listing-information.html')
             </div>
         </main>
 

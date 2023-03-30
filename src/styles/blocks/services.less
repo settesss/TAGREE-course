@@ -7,8 +7,15 @@
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
+    @media @bw1340 {
+        padding: 0 30px;
+    }
+    @media @bw768 {
+        padding: 0 20px;
+    }
 
     &-text {
+        margin-top: 0;
         max-width: 868px;
     }
 
@@ -21,15 +28,21 @@
         border-collapse: collapse;
         font-size: 18px;
         line-height: 25px;
+        @media @bw768 {
+            font-size: 14px;
+        }
         
         tr &-service {
             text-align: start;
             max-width: 100%;
             min-width: 188px;
+            @media @bw768 {
+                min-width: 0;
+            }
         }
         
         &-body tr:nth-child(odd) {
-            background: rgba(31, 30, 30, 0.03);;
+            background: rgba(31, 30, 30, 0.03);
         }
         
         &-icon {
@@ -41,6 +54,10 @@
         td {
             height: 50px;
             max-height: 100px;
+            @media @bw768 {
+                padding: 0;
+                width: 0;
+            }
         }
         
         td:not(:last-child) {
@@ -53,6 +70,9 @@
         
         th {
             padding: 30px 50px;
+            @media @bw768 {
+                padding: 23px 1px;
+            }
         }
         
         th:not(:first-child) {
