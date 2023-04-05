@@ -3263,6 +3263,15 @@ tr .services__table-service {
     font-size: 12px;
     line-height: 14px;
   }
+  .event-tblock__program li {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .event-tblock__name {
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 50px;
+  }
   .about__projects-pics__pic {
     max-width: 267px;
     left: calc(100% - 271px);
