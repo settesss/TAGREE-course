@@ -4,6 +4,12 @@
     width: 100%;
     margin: 0 auto 150px;
     padding: 0 40px;
+    @media @bw1340 {
+        padding: 0 30px;
+    }
+    @media @bw768 {
+        padding: 0 20px;
+    }
 
     &-card {
         display: flex;
@@ -136,6 +142,17 @@
         line-height: 90px;
         margin: 0 auto 80px;
         max-width: 819px;
+        text-align: center;
+        @media @bw1020 {
+            font-size: 40px;
+            line-height: 51px;
+        }
+        @media @bw600 {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 40px;
+            margin-top: 80px;
+        }
     }
 
     &-pic {
@@ -149,6 +166,13 @@
         justify-content: center;
         align-items: center;
         gap: 60px;
+        @media @bw768 {
+            flex-wrap: wrap;
+        }
+        @media @bw600 {
+            gap: 39px;
+            margin-bottom: 60px;
+        }
     
         &__side {
             display: flex;
@@ -156,6 +180,35 @@
             max-height: 92px;
             min-height: 56px;
             gap: 11px;
+            @media @bw600 {
+                gap: 7px;
+            }
+        }
+        &__img {
+            margin: auto;
+            &:nth-child(3) {
+                @media @bw768 {
+                    order: 1;
+                    flex-basis: 33.33%;
+                }
+            }
+            &:nth-child(2) {
+                @media @bw768 {
+                    order: -1;
+                    flex-basis: 100%;
+                    text-align: center;
+                }
+                @media @bw600 {
+                    padding: 0 25px;
+                }
+            }
+            &:nth-child(1) {
+                @media @bw768 {
+                    order: 0;
+                    flex-basis: 33.33%;
+                    align-items: flex-end;
+                }
+            }
         }
         &__rect {
             width: 139px;
@@ -165,6 +218,9 @@
             &--right {
                 margin-left: 0;
                 transform: rotate(180deg);
+            }
+            @media @bw600 {
+                width: 83px;
             }
         }
     
@@ -177,6 +233,10 @@
             font-size: 30px;
             line-height: 36px;
             gap: 12px;
+            @media @bw600 {
+                font-size: 18px;
+                line-height: 22px;
+            }
         }
         &__text--low {
             font-family: @font2;
@@ -186,6 +246,10 @@
             line-height: 19px;
             text-transform: uppercase;
             white-space: nowrap;
+            @media @bw600 {
+                font-size: 12px;
+                line-height: 14px;
+            }
         }
     }
 
