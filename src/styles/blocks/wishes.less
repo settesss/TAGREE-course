@@ -1,9 +1,9 @@
-.wishes__block {
+.wishes-block {
     display: flex;
     flex-direction: column;
-    margin: 0 auto 200px;
     width: 100%;
     max-width: 624px;
+    margin: 0 auto 200px;
     text-align: center;
     gap: 46px;
     @media @bw1660 {
@@ -25,10 +25,10 @@
 
     &__title {
         display: inline-block;
+        margin: auto;
         font-family: @font3;
         font-size: 22px;
         line-height: 30px;
-        margin: auto;
         text-transform: uppercase;
         @media @bw650 {
             font-size: 13px;
@@ -37,12 +37,12 @@
         }
     }
 
-    &-btns {
+    &__btns {
         display: flex;
-        max-width: 624px;
-        width: 100%;
         flex-direction: row;
         justify-content: space-between;
+        max-width: 624px;
+        width: 100%;
         @media @bw650 {
             flex-direction: column;
             gap: 25px;
