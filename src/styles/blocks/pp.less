@@ -10,7 +10,13 @@
     backdrop-filter: blur(50px);
     overflow-y: auto;
     z-index: 110;
-    display: flex;
+    display: none;
+    @media @bw1020 {
+        padding: 72px 40px 50px;
+    }
+    @media @bw650 {
+        padding: 89px 20px 50px;
+    }
 
     &__wrapper {
         box-sizing: border-box;
@@ -25,6 +31,15 @@
         background-position: 0 0;
         background-size: auto;
         background-repeat: repeat;
+        @media @bw1340 {
+            max-width: 1144px;
+        }
+        @media @bw1020 {
+            max-width: 688px;
+        }
+        @media @bw650 {
+            min-width: 280px;
+        }
     }
 
     &__container {
@@ -33,6 +48,9 @@
         max-width: 950px;
         margin: 0 auto;
         padding: 0 40px 40px;
+        @media @bw1340 {
+            padding: 0 20px 40px;
+        }
     }
 
     &__sticky-close {
@@ -59,6 +77,15 @@
         &:hover {
             background-color: @red_hover;
         }
+        @media @bw1020 {
+            right: 0px;
+        }
+        @media @bw768 {
+            width: 32px;
+            height: 32px;
+            top: -16px;
+            right: -16px;
+        }
     }
     .x-btn__icon {
         width: 24px;
@@ -72,7 +99,7 @@
         margin: -40px 0 70px -85px;
         padding: 10px 85px;
         width: 595px;
-        min-height: 80px;
+        // min-height: 80px;
         background-color: @black;
         text-transform: uppercase;
         font-weight: 400;
@@ -82,6 +109,33 @@
         color: @white;
         letter-spacing: 0.02em;
         z-index: 1;
+        @media @bw1340 {
+            width: 465px;
+            height: 80px;
+            margin-left: -13px;
+            padding: 18px;
+        }
+        @media @bw1020 {
+            width: 465px;
+            height: 80px;
+            padding: 18px;
+        }
+        @media @bw768 {
+            transform-origin: top left;
+            transform: scale(0.8);
+            transition: transform 0.2s;
+            padding: 18px;
+        }
+        @media @bw650 {
+            width: 225px;
+            height: 77px;
+            font-size: 14px;
+            line-height: 19px;
+            margin: 0;
+            padding: 20px 9px 22px 11px;
+            margin-left: -6px;
+            margin-top: -30px;
+        }
     }
 
 }

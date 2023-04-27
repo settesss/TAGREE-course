@@ -3,6 +3,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media @bw650 {
+            flex-direction: column;
+        }
     }
 
     &__field,
@@ -15,6 +18,9 @@
 
     &__field {
         margin: 0 0 30px;
+        @media @bw600 {
+            width: 240px;
+        }
     }
 
     &__check-list {
@@ -43,10 +49,17 @@
         display: flex;
         align-items: center;
         margin-top: 20px;
+        @media @bw600 {
+            flex-direction: column;
+            gap: 25px;
+        }
     }
     &__submit {
         &--w50 {
             width: calc(50% - 30px);
+            @media @bw600 {
+                width: 240px;
+            }
         }
     }
     &__close-btn {
@@ -62,6 +75,7 @@
         transition: color 0.2s;
         &:hover {
             color: @red_hover;
+            cursor: pointer;
         }
     }
 }

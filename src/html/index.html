@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang = "ru">
-
+    
     @@include('blocks/head.html') 
-
     <body class = "body">
         
         @@include('blocks/header.html') 
@@ -18,6 +17,71 @@
             @@include('blocks/contacts.html')
         </main>
         @@include('blocks/footer.html')
-        <!-- @@include('blocks/pp-form.html') -->
+        @@include('blocks/pp-form.html')
+
+        <!-- Открытие навигации для мобильной версии -->
+        <script>
+            const navToggle = document.querySelector('.header__nav-toggle');
+            const navMenu = document.querySelector('.header__nav');
+
+            navToggle.addEventListener('click', () => {
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    navMenu.style.transform = 'translateX(-100%)';
+                } else {
+                    navMenu.classList.add('active');
+                    navMenu.style.transform = 'translateX(0)';
+                    navMenu.style.display = 'flex'; // add this line
+                }
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 1020) { // or your breakpoint value
+                    navMenu.classList.remove('active');
+                    navMenu.style.transform = 'translateX(0)';
+                    navMenu.style.display = 'flex'; // add this line
+                } else {
+                    navMenu.style.display = 'none'; // add this line
+                }
+            });
+        </script>
+
+        <!-- Смена кнопки при нажатии на кнопку "Войти" в header'e -->
+        <script>
+            const userBtn = document.querySelector('.header__user-btn');
+
+            userBtn.addEventListener('click', function() {
+            userBtn.textContent = 'Никита М.';
+            userBtn.disabled = true;
+            userBtn.style.border = "none";
+            userBtn.style.display = "block";
+            });
+        </script>
+
+        <!-- Закрытие формы на крестик -->
+        <script>
+            const openButton = document.getElementById("open-form");
+            const closeButton = document.getElementById("close-form");
+            const form = document.getElementById("eventPP");
+
+            openButton.addEventListener("click", function() {
+            form.style.display = "block";
+            });
+
+            closeButton.addEventListener("click", function() {
+            form.style.display = "none";
+            });
+        </script>
+
+        <!-- Закрытие формы при нажатии на кнопку "закрыть" -->
+        <script>
+            const formCloseButton = document.querySelector('.form__close-btn');
+            const formPP = document.querySelector('.pp');
+
+            formCloseButton.addEventListener('click', () => {
+                formPP.style.display = 'none';
+            });
+        </script>
+
     </body>
 </html>
