@@ -29,13 +29,12 @@
 }
 
 .show-event-popup {
-    body {
-        overflow: hidden;
-    }
-
-    #eventPP {
-        display: flex;
-    }
+  body {
+    overflow: hidden;
+  }
+  #js-eventPP {
+    display: flex;
+  }
 }
 
 .width_624 {
@@ -49,4 +48,26 @@
         max-width: 566px;
     }
 }
+
+.show-nav {
+    body {
+      @media @bw1020 {
+        overflow: hidden;
+      }
+    }
+    .header__nav {
+      @media @bw1020 {
+        transform: translateX(0);
+      }
+    }
+    .header__nav-toggle {
+      &::before {
+        transform: translate(0px, 6px) rotate(45deg);
+        box-shadow: none;
+      }
+      &::after {
+        transform: translate(0px, -6px) rotate(-45deg);
+      }
+    }
+  }
 

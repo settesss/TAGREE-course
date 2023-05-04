@@ -17,15 +17,8 @@
             </div>
         </main>
         @@include('blocks/footer.html')
-        <script>
-            const userBtn = document.querySelector('.header__user-btn');
+        
+        <script src="../scripts/dev/main.min.js" defer></script>
 
-            userBtn.addEventListener('click', function() {
-            userBtn.textContent = 'Никита М.';
-            userBtn.disabled = true;
-            userBtn.style.border = "none";
-            userBtn.style.display = "block";
-            });
-        </script>
     </body>
 </html>

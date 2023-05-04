@@ -822,6 +822,7 @@ textarea:focus::placeholder {
   width: 24px;
   height: 24px;
   color: #FFFFFF;
+  pointer-events: none;
 }
 .pp__title {
   -webkit-box-sizing: border-box;
@@ -1569,6 +1570,11 @@ textarea:focus::placeholder {
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+  transition: -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+  -o-transition: transform 0.4s, box-shadow 0.4s;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition: transform 0.4s, box-shadow 0.4s, -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
 }
 .header__nav-toggle::before {
   top: 13px;
@@ -1850,6 +1856,17 @@ textarea:focus::placeholder {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -30px -120px;
+}
+.listing .display {
+  display: none;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 .listing__events {
   padding: 0 40px;
@@ -2200,6 +2217,13 @@ textarea:focus::placeholder {
   top: 3313px;
   z-index: -1;
 }
+#js-sliderPics {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
 .services {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2475,7 +2499,7 @@ tr .services__table-service {
 .show-event-popup body {
   overflow: hidden;
 }
-.show-event-popup #eventPP {
+.show-event-popup #js-eventPP {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2485,6 +2509,22 @@ tr .services__table-service {
           box-sizing: border-box;
   width: 100%;
   max-width: 624px;
+}
+.show-nav .header__nav-toggle::before {
+  -webkit-transform: translate(0px, 6px) rotate(45deg);
+      -ms-transform: translate(0px, 6px) rotate(45deg);
+          transform: translate(0px, 6px) rotate(45deg);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.show-nav .header__nav-toggle::after {
+  -webkit-transform: translate(0px, -6px) rotate(-45deg);
+      -ms-transform: translate(0px, -6px) rotate(-45deg);
+          transform: translate(0px, -6px) rotate(-45deg);
+}
+.swiper {
+  width: 600px;
+  height: 300px;
 }
 @media (max-width: 1659px) {
   body {
@@ -2932,6 +2972,14 @@ tr .services__table-service {
   .event-card__description {
     font-size: 14px;
     line-height: 19px;
+  }
+  .show-nav body {
+    overflow: hidden;
+  }
+  .show-nav .header__nav {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @media (max-width: 767px) {

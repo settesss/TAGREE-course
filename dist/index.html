@@ -5,7 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <title>LENNI ART</title>
-  <!-- <link rel="icon" href="../../../src/assets/images/favicon.ico" type="image/x-icon"/> -->
+  <link rel="icon" href="../../assets/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" href="../../assets/favicons/favicon16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="../../assets/favicons/favicon32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../../assets/favicons/favicon48x48.png" sizes="48x48">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
@@ -13,7 +16,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
-
 </head>
 
 <body class="body">
@@ -49,7 +51,7 @@
             <use xlink:href="assets/icons/symbols.svg#user"></use>
           </svg>
         </a>
-        <button type="button" class="header__nav-toggle"></button>
+        <button type="button" class="header__nav-toggle" id="js-navToggle"></button>
       </div>
     </div>
   </header>
@@ -70,10 +72,10 @@
         <span class="wishes-block__title">Я хочу:</span>
       </section>
       <div class="wishes-block__btns">
-        <button href="#" alt="button" class="button__wishes-block button__wishes-block--red" id="open-form">
+        <button href="#" alt="button" class="button__wishes-block button__wishes-block--red" id="js-eventOpenBtn">
           Провести мероприятие
         </button>
-        <button href="#" alt="button" class="button__wishes-block button__wishes-block--noncolor" id="open-form">
+        <button href="#" alt="button" class="button__wishes-block button__wishes-block--noncolor">
           Стать арендатором
         </button>
       </div>
@@ -139,8 +141,8 @@
       </h2>
 
       <div class="events-block__slider">
-        <div class="events-block__slider-pics">
-          <article class="event-card events-block__card">
+        <div class="events-block__slider-pics" id="js-sliderPics">
+          <article class="event-card events-block__card visible">
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
                 <img src="../assets/images/Nirvana.jpg" alt="Nirvana" class="event-card__img">
@@ -154,7 +156,7 @@
               <time class="event-card__time" datetime="2022-12-07">07.12.2022 | начало 18.00</time>
             </a>
           </article>
-          <article class="event-card events-block__card">
+          <article class="event-card events-block__card visible">
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
                 <img src="../assets/images/HowStuffWorks.jpg" alt="HowStuffWorks" class="event-card__img">
@@ -182,22 +184,50 @@
               <time class="event-card__time" datetime="2022-12-16">16.12.2022 | начало 20.00</time>
             </a>
           </article>
+          <article class="event-card events-block__card">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+                <img src="../assets/images/Nirvana.jpg" alt="Nirvana" class="event-card__img">
+              </picture>
+              <h4 class="event-card__title">
+                Собираемся и слушаем альбом Nirvana. Nirvana
+              </h4>
+              <p class="event-card__description">
+                Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.
+              </p>
+              <time class="event-card__time" datetime="2022-12-07">07.12.2022 | начало 18.00</time>
+            </a>
+          </article>
+          <article class="event-card events-block__card">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+                <img src="../assets/images/Nirvana.jpg" alt="Nirvana" class="event-card__img">
+              </picture>
+              <h4 class="event-card__title">
+                Собираемся и слушаем альбом Nirvana. Nirvana
+              </h4>
+              <p class="event-card__description">
+                Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.
+              </p>
+              <time class="event-card__time" datetime="2022-12-07">07.12.2022 | начало 18.00</time>
+            </a>
+          </article>
         </div>
 
         <div class="events-block__slider-btns">
-          <a href="#" class="btn__arrow btn__slider--left">
+          <a class="btn__arrow btn__slider--left" id="js-sliderLeftBtn">
             <svg class="arrow" width="92" height="62">
               <use xlink:href="assets/icons/symbols.svg#arrow-right"></use>
             </svg>
           </a>
           <div class="events-block__slider-rects">
-            <div class="events-block__slider-rect"></div>
-            <div class="events-block__slider-rect"></div>
-            <div class="events-block__slider-rect events-block__slider-rect--active"></div>
-            <div class="events-block__slider-rect"></div>
-            <div class="events-block__slider-rect"></div>
+            <div class="events-block__slider-rect" id="js-sliderRect"></div>
+            <div class="events-block__slider-rect" id="js-sliderRect"></div>
+            <div class="events-block__slider-rect" id="js-sliderRect"></div>
+            <div class="events-block__slider-rect" id="js-sliderRect"></div>
+            <div class="events-block__slider-rect" id="js-sliderRect"></div>
           </div>
-          <a href="#" class="btn__arrow btn__slider--right">
+          <a class="btn__arrow btn__slider--right" id="js-sliderRightBtn">
             <svg class="arrow" width="92" height="62">
               <use xlink:href="assets/icons/symbols.svg#arrow-right"></use>
             </svg>
@@ -421,10 +451,10 @@
       </div>
     </div>
   </footer>
-  <div class="pp" id="eventPP">
+  <div class="pp" id="js-eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
-        <button class="pp__x-btn x-btn" id="close-form">
+        <button class="pp__x-btn x-btn js-ppCloseBtn">
           <svg class="x-btn__icon" width="12" height="12">
             <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
@@ -537,76 +567,15 @@
 
           <div class="form__btns">
             <button type="submit" class="btn form__submit form__submit--w50">Отправить</button>
-            <button class="form__close-btn">Закрыть</button>
+            <button class="form__close-btn js-ppCloseBtn">Закрыть</button>
           </div>
         </form>
       </div>
     </div>
   </div>
 
-  <!-- Открытие навигации для мобильной версии -->
-  <script>
-            const navToggle = document.querySelector('.header__nav-toggle');
-            const navMenu = document.querySelector('.header__nav');
-
-            navToggle.addEventListener('click', () => {
-                if (navMenu.classList.contains('active')) {
-                    navMenu.classList.remove('active');
-                    navMenu.style.transform = 'translateX(-100%)';
-                } else {
-                    navMenu.classList.add('active');
-                    navMenu.style.transform = 'translateX(0)';
-                    navMenu.style.display = 'flex'; // add this line
-                }
-            });
-
-            window.addEventListener('resize', () => {
-                if (window.innerWidth >= 1020) { // or your breakpoint value
-                    navMenu.classList.remove('active');
-                    navMenu.style.transform = 'translateX(0)';
-                    navMenu.style.display = 'flex'; // add this line
-                } else {
-                    navMenu.style.display = 'none'; // add this line
-                }
-            });
-        </script>
-
-  <!-- Смена кнопки при нажатии на кнопку "Войти" в header'e -->
-  <script>
-            const userBtn = document.querySelector('.header__user-btn');
-
-            userBtn.addEventListener('click', function() {
-            userBtn.textContent = 'Никита М.';
-            userBtn.disabled = true;
-            userBtn.style.border = "none";
-            userBtn.style.display = "block";
-            });
-        </script>
-
-  <!-- Закрытие формы на крестик -->
-  <script>
-            const openButton = document.getElementById("open-form");
-            const closeButton = document.getElementById("close-form");
-            const form = document.getElementById("eventPP");
-
-            openButton.addEventListener("click", function() {
-            form.style.display = "block";
-            });
-
-            closeButton.addEventListener("click", function() {
-            form.style.display = "none";
-            });
-        </script>
-
-  <!-- Закрытие формы при нажатии на кнопку "закрыть" -->
-  <script>
-            const formCloseButton = document.querySelector('.form__close-btn');
-            const formPP = document.querySelector('.pp');
-
-            formCloseButton.addEventListener('click', () => {
-                formPP.style.display = 'none';
-            });
-        </script>
+  <script src="../scripts/dev/swiper.min.js"></script>
+  <script src="../scripts/dev/main.min.js" defer></script>
 
 </body>
 
