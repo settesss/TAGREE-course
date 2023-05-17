@@ -12,10 +12,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.css">
 </head>
 
 <body class="body">
@@ -72,10 +74,10 @@
         <span class="wishes-block__title">Я хочу:</span>
       </section>
       <div class="wishes-block__btns">
-        <button href="#" alt="button" class="button__wishes-block button__wishes-block--red" id="js-eventOpenBtn">
+        <button class="button__wishes-block button__wishes-block--red" id="js-eventOpenBtn">
           Провести мероприятие
         </button>
-        <button href="#" alt="button" class="button__wishes-block button__wishes-block--noncolor">
+        <button class="button__wishes-block button__wishes-block--noncolor">
           Стать арендатором
         </button>
       </div>
@@ -221,11 +223,11 @@
             </svg>
           </a>
           <div class="events-block__slider-rects">
-            <div class="events-block__slider-rect" id="js-sliderRect"></div>
-            <div class="events-block__slider-rect" id="js-sliderRect"></div>
-            <div class="events-block__slider-rect" id="js-sliderRect"></div>
-            <div class="events-block__slider-rect" id="js-sliderRect"></div>
-            <div class="events-block__slider-rect" id="js-sliderRect"></div>
+            <div class="events-block__slider-rect"></div>
+            <div class="events-block__slider-rect"></div>
+            <div class="events-block__slider-rect"></div>
+            <div class="events-block__slider-rect"></div>
+            <div class="events-block__slider-rect"></div>
           </div>
           <a class="btn__arrow btn__slider--right" id="js-sliderRightBtn">
             <svg class="arrow" width="92" height="62">
@@ -469,7 +471,7 @@
         <form class="pp__form form">
           <div class="form__list">
             <div class="field form__field form__field--w50">
-              <h6 class="field__title">Формат мероприятия:</h6>
+              <span class="field__title">Формат мероприятия:</span>
               <div class="radio form__radio">
                 <label class="radio__item">
                   <input type="radio" class="radio__input" name="format" value="master-class" checked>
@@ -496,8 +498,8 @@
 
             <div class="form__group form__group--w50">
               <label class="field form__field">
-                <h6 class="field__title">Планируемое количество посетителей:
-                </h6>
+                <span class="field__title">Планируемое количество посетителей:
+                </span>
                 <select name="count" class="field__select">
                   <option value="20">до 20 человек</option>
                   <option value="100">от 20 до 100 человек</option>
@@ -507,18 +509,16 @@
               </label>
 
               <label class="field form__field">
-                <h6 class="field__title">Дата проведения:</h6>
+                <span class="field__title">Дата проведения:</span>
                 <div class="field__date-inputs">
-                  <input type="text" class="field__date-input" placeholder="ДД">
-                  <input type="text" class="field__date-input" placeholder="ММ">
-                  <input type="text" class="field__date-input field__date-input--year" placeholder="ГГГГ">
+                  <input type="text" id="eventDate" class="field__date-input" placeholder="DD.MM.YYYY">
                 </div>
               </label>
             </div>
           </div>
 
           <div class="form__section">
-            <h6 class="form__section-title">Контактные данные:</h6>
+            <span class="form__section-title">Контактные данные:</span>
             <div class="form__list">
               <label class="field form__field form__field--w50">
                 <span class="field__label">
@@ -536,7 +536,7 @@
                 <span class="field__label">
                   Телефон*
                 </span>
-                <input type="tel" class="field__input" name="phone" required />
+                <input type="tel" class="field__input" name="phone" id="phoneInput" placeholder="+7 (___) ___-____" required />
               </label>
               <label class="field form__field form__field--w50">
                 <span class="field__label">
@@ -574,6 +574,7 @@
     </div>
   </div>
 
+  <script src="../scripts/dev/validator.js"></script>
   <script src="../scripts/dev/swiper.min.js"></script>
   <script src="../scripts/dev/main.min.js" defer></script>
 

@@ -9,12 +9,12 @@
         </div>
 
         <div class="pp__container">
-            <h2 class="pp__title">Заполните форму<br />и мы подберем площадку</h2>
+            <h2 class="pp__title">Заполните форму<br/>и мы подберем площадку</h2>
 
             <form class = "pp__form form">
                 <div class="form__list">
                     <div class="field form__field form__field--w50">
-                        <h6 class="field__title">Формат мероприятия:</h6>
+                        <span class="field__title">Формат мероприятия:</span>
                         <div class="radio form__radio">
                             <label class="radio__item">
                                 <input type="radio" class = "radio__input" name = "format" value = "master-class" checked >
@@ -32,7 +32,7 @@
                                 <span class="radio__name">Выставка/показ</span>
                             </label>
                             <label class="radio__item">
-                                <input type="radio" class = "radio__input" name = "format"value = "Other">
+                                <input type="radio" class = "radio__input" name = "format" value = "Other">
                                 <span class="radio__mark"></span>
                                 <span class="radio__name">Другое</span>
                             </label>
@@ -41,8 +41,8 @@
     
                     <div class="form__group form__group--w50">
                         <label class="field form__field">
-                            <h6 class="field__title">Планируемое количество посетителей:
-                            </h6>
+                            <span class="field__title">Планируемое количество посетителей:
+                            </span>
                             <select name="count" class = "field__select">
                                 <option value="20">до 20 человек</option>
                                 <option value="100">от 20 до 100 человек</option>
@@ -52,18 +52,16 @@
                         </label>
     
                         <label class="field form__field">
-                            <h6 class="field__title">Дата проведения:</h6>
+                            <span class="field__title">Дата проведения:</span>
                             <div class="field__date-inputs">
-                                <input type="text" class="field__date-input" placeholder="ДД">
-                                <input type="text" class="field__date-input" placeholder="ММ">
-                                <input type="text" class="field__date-input field__date-input--year" placeholder="ГГГГ">
+                                <input type="text" id="eventDate" class="field__date-input" placeholder="DD.MM.YYYY">
                             </div>
                         </label>
                     </div>
                 </div>
 
                 <div class="form__section">
-                    <h6 class="form__section-title">Контактные данные:</h6>
+                    <span class="form__section-title">Контактные данные:</span>
                     <div class="form__list">
                         <label class="field form__field form__field--w50">
                             <span class="field__label">
@@ -81,7 +79,7 @@
                             <span class="field__label">
                                 Телефон*
                             </span>
-                            <input type="tel" class="field__input" name = "phone" required/>
+                            <input type="tel" class="field__input" name = "phone" id="phoneInput" placeholder = "+7 (___) ___-____" required/>
                         </label>
                         <label class="field form__field form__field--w50">
                             <span class="field__label">
@@ -107,7 +105,7 @@
                             Я соглашаюсь с пользовательским соглашением 
                             и с политикой использования персональных данных
                         </span>
-                    </label>
+                    </label> 
                 </div>
 
                 <div class="form__btns">

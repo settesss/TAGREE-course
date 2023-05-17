@@ -1,4 +1,6 @@
 .pp {
+    z-index: 110;
+    display: none;
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -9,8 +11,7 @@
     background-color: rgba(28, 27, 27, 0.4);
     backdrop-filter: blur(50px);
     overflow-y: auto;
-    z-index: 110;
-    display: none;
+
     @media @bw1020 {
         padding: 72px 40px 50px;
     }
@@ -60,6 +61,7 @@
         width: 0;
         height: 0;
     }
+
     &__x-btn {
         position: absolute;
         display: flex;
@@ -87,12 +89,14 @@
             right: -16px;
         }
     }
+
     .x-btn__icon {
         width: 24px;
         height: 24px;
         color: @white;
         pointer-events: none;
     }
+    
     &__title {
         box-sizing: border-box;
         display: flex;
