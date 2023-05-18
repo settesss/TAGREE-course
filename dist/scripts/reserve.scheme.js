@@ -75,9 +75,9 @@
                 total += 1400;
             } else {
                 ticketQuantities[1].textContent = parseInt(ticketQuantities[1].textContent) + 1;
-                ticketSums[1].textContent = parseInt(ticketSums[1].textContent) + 1200;
+                ticketSums[1].textContent = parseInt(ticketSums[1].textContent) + 1250;
                 quantitySum++;
-                total += 1200;
+                total += 1250;
             }
           } else {
             if ([1, 4, 7, 8, 9].includes(index + 1)) {
@@ -86,9 +86,9 @@
                 total -= 1400;
             } else {
                 ticketQuantities[1].textContent = parseInt(ticketQuantities[1].textContent) - 1;
-                ticketSums[1].textContent = parseInt(ticketSums[1].textContent) - 1200;
+                ticketSums[1].textContent = parseInt(ticketSums[1].textContent) - 1250;
                 quantitySum--;
-                total -= 1200;
+                total -= 1250;
             }
           }
           totalSum.textContent = total;
